@@ -4,7 +4,7 @@
   "manifest_version": 3,
   "default_locale": "en",
   "description": "__MSG_description__",
-  "icon": {
+  "icons": {
     "32": "./icons/icon-32.png",
     "64": "./icons/icon-64.png",
     "128": "./icons/icon-128.png"
@@ -34,5 +34,12 @@
   },
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"],
+  "chrome_url_overrides": {
+    "newtab": "new_tab.html"
   }
 }
